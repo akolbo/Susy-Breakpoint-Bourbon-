@@ -1,0 +1,80 @@
+// Susy Grid Settings
+// ====
+
+// old susy grid
+
+// $susy: (
+// 	columns: 12,
+// 	gutters: 1/6,
+// 	math: fluid,
+// 	output: float,
+	
+
+// 	debug: (
+// 	    image: show,
+// 	    color: rgba(#66f, .2),
+// 	    output: background overlay,
+// 	    toggle: top right,
+//   ),
+
+
+// );
+
+$susy: (
+  gutter-position: inside-static,
+  container: 100%,
+  columns: 4,
+  column-width: 120px,
+  gutter: 15px/120px,
+  math: fluid,
+  output: float,
+
+	debug: (
+	    image: show,
+	    color: rgba(#c0c0c0, .8),
+	    output: background overlay,
+	    toggle: top right,
+  ),
+);
+
+@include border-box-sizing;
+
+.grid-container {
+	@include container(1600px);
+	margin: 0 auto;
+}
+
+
+// Media Query Variables
+// =====================
+
+// Min-Widths
+$zero:		0px;
+$xs: 		400px;
+$sm: 		750px;
+$md: 		1150px;
+$lg: 		1400px;
+$xl: 		1700px;
+$infinity:	9999px;
+
+// Ranges
+$xs-sm:  $xs ($sm - 1);
+$sm-md:  $sm ($md - 1);
+$md-lg:  $md ($lg - 1);
+$lg-xl:  $lg ($xl - 1);
+$xl-inf: $xl ($infinity - 1);
+
+
+
+// Examples from Breakpoint Website (for Reference)
+
+// assume min-width (by default) if only a number
+$high-tide: 500px;
+// set min-width/max-width if both values are numbers
+$ex-presidents: 600px 800px;
+// if one value is a string, assume a feature/value pair
+$surfboard-width: max-width 1000px;
+// string tests together within parentheses, assume each item is a feature value pair
+$surfboard-height: (min-height 1000px) (orientation portrait);
+
+$xs-down:  0px 399px;

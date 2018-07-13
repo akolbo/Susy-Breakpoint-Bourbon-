@@ -1,0 +1,27 @@
+{
+  "name": "susy-cue",
+  "version": "1.0.0",
+  "description": "Gulp dependencies for Susy-Cue setup",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivandoric/olympos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bourbon": "^5.0.0-beta.8",
+    "bourbon-neat": "^2.1.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "imagemin-pngquant": "^4.1.0"
+  }
+}

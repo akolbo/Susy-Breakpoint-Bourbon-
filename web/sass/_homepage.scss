@@ -1,0 +1,96 @@
+// Homepage
+// ====
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+p {
+	font-size: 1.5em;
+}
+
+main {background-color: lightGray;
+overflow: hidden;}
+
+
+section {
+
+	h3 {
+		//small Screen
+		font-size: 2.5em;
+		text-transform: uppercase;
+		-webkit-margin-before: .06em;
+		-webkit-margin-after: .06em;
+		-webkit-margin-start: 0px;
+		-webkit-margin-end: 0px;
+		font-weight: bold;
+		
+		//Medium Screen
+		@include breakpoint ($md){
+		font-size: 4em; }
+		
+		//Medium Screen        	        	
+		@include breakpoint ($lg){
+	    font-size: 6em; }
+
+	}
+
+
+	@include span(4);
+	@include container($xl);
+	
+	
+	float: none;
+	display: block;
+	margin: 0 auto; }
+
+
+
+.skills h2 {
+	padding: 30px;
+
+	
+}
+
+
+section > h2 {@include clearfix;}
+section > div {@include span(2);}
+
+
+
+
+
+
+@include border-box-sizing;
+
+main {
+  @include container(content-box);  
+  outline: 1px solid red;
+}
+
+
+
+footer > div {
+		
+		//All
+		@include breakpoint ($zero){
+			@include span(4); }		
+		 		
+		//min-width Medium Screen
+		@include breakpoint ($sm){
+			@include span(2); }
+
+		//min-width Large Screen
+		@include breakpoint ($md){
+			@include span(1); }	
+}
+
+
+
+span {
+  display: block;
+
+}
