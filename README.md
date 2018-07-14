@@ -7,7 +7,7 @@ This is a starter project template that uses Susy, Breakpoint, Bourbon and Gulp.
 1. Clone the repo 
 
 ~~~
-git clone https://github.com/zellwk/gulp-susy-starter.git
+git clone https://github.com/akolbo/Susy-Breakpoint-Bourbon-.git
 ~~~
 
 2. Install Node dependencies 
